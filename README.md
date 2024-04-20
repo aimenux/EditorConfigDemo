@@ -13,4 +13,4 @@ In this repo, i m using EditorConfig in order to enforce csharp code style.
 >
 > :three: `CsharpStylePreferReadonlyRule` show the using of 'readonly'
 >
-**`Tools`** : net 7.0, editor-config, dotnet-format
+**`Tools`** : net 8.0, editor-config, dotnet-format

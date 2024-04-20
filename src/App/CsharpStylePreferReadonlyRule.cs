@@ -8,9 +8,19 @@ public class CsharpStylePreferReadonlyRule
     private readonly int _month = DateTime.Now.Month;
     private static readonly int Year = DateTime.Now.Year;
 
-    public void Example()
+    private CsharpStylePreferReadonlyRule()
+    {
+    }
+
+    private void PrintReadonlyFields()
     {
         Console.WriteLine($"Month is {_month}");
         Console.WriteLine($"Year is {Year}");
+    }
+
+    public static void Example()
+    {
+        var rule = new CsharpStylePreferReadonlyRule();
+        rule.PrintReadonlyFields();
     }
 }
